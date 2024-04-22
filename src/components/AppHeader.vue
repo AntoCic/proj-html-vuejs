@@ -1,23 +1,21 @@
 <template>
-  <main>
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-auto">
-          <h1>Everland<span class="text-orange">.</span></h1>
-        </div>
-        <div class="col-auto">
-          <template v-for="link in links">
-            <elm-arrow :class="{'active': link === currentPage}" />
-            <a href="#" class="me-2" :class="{'active': link === currentPage}">{{ link.toUpperCase() }}</a>
-          </template>
-          <a href="#" class="me-2"><i class="bi bi-search"></i></a>
-          <a href="#" class="me-2"><i class="bi bi-list-ul"></i></a>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <h1 class="mb-0">Everland<span class="text-orange">.</span></h1>
+          </div>
+          <div class="col-auto">
+            <template v-for="link in links">
+              <elm-arrow :class="{ 'active': link === currentPage }" />
+              <a href="#" class="me-2" :class="{ 'active': link === currentPage }">{{ link.toUpperCase() }}</a>
+            </template>
+            <a href="#" class="me-2"><i class="bi bi-search"></i></a>
+            <a href="#" class="me-2"><i class="bi bi-list-ul"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-
-
-  </main>
+    </header>
 </template>
 
 <script>
@@ -50,8 +48,16 @@ export default {
 
 </script>
 
+
 <style lang="scss" scoped>
 @use '../assets/scss/partials/_variables.scss' as *;
+
+.header {
+  padding: 50px 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .active {
   color: $orange;

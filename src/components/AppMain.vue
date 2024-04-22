@@ -1,6 +1,10 @@
 <template>
     <main>
+        <div class="hero">
+            <img src="../assets/img/rev-slider-main-home-img-03.jpg" alt="">
+        </div>
         <h2>Main</h2>
+        
     </main>
 </template>
 
