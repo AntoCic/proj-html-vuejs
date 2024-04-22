@@ -1,5 +1,6 @@
 import { reactive } from 'vue'
 
 export const store = reactive({
-    page: ['Home', 'Pages', 'Blog', 'Shop', 'Events', 'Elements']
+    pages: ['Home', 'Pages', 'Blog', 'Shop', 'Events', 'Elements'],
+    currentPage:'Home'
 })

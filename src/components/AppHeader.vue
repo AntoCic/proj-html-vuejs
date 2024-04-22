@@ -1,14 +1,32 @@
 <template>
   <main>
-    <h2>Header</h2>
-    <a v-for="link in links" href="#" class="me-2">{{ link }}</a>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <h1>Everland<span class="text-orange">.</span></h1>
+        </div>
+        <div class="col-auto">
+          <template v-for="link in links">
+            <elm-arrow :class="{'active': link === currentPage}" />
+            <a href="#" class="me-2" :class="{'active': link === currentPage}">{{ link.toUpperCase() }}</a>
+          </template>
+          <a href="#" class="me-2"><i class="bi bi-search"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-list-ul"></i></a>
+        </div>
+      </div>
+    </div>
+
+
   </main>
 </template>
 
 <script>
 import { store } from '../store.js';
 
+import ElmArrow from './ElmArrow.vue'
+
 export default {
+  components: { ElmArrow },
   data() {
     return {
       store,
@@ -18,7 +36,10 @@ export default {
   },
   computed: {
     links() {
-      return this.store.page
+      return this.store.pages
+    },
+    currentPage() {
+      return this.store.currentPage
     }
   },
   mounted() {
@@ -29,4 +50,10 @@ export default {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/_variables.scss' as *;
+
+.active {
+  color: $orange;
+}
+</style>

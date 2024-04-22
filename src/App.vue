@@ -1,9 +1,7 @@
 <template>
-  <h1>Ciao Mondo</h1>
   <AppHeader />
   <AppMain />
   <AppFooter />
-  <img src="" alt="">
 
 </template>
 
@@ -16,4 +14,6 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+</style>
