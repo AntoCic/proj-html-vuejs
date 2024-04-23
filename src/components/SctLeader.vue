@@ -1,5 +1,5 @@
 <template>
-    <section class="leader w-100 p-sct">
+    <section class="leader w-100 p-sct bg-white">
         <div class="ms_container-md">
             <div class="container">
                 <div class="row">
