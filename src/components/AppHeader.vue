@@ -1,13 +1,11 @@
 <template>
-    <header class="header">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-auto">
+    <header class="header w-100">
+      <div class="ms_container-lg">
+        <div class="d-flex justify-content-between align-items-center">
             <h1 class="mb-0">Everland<span class="text-orange">.</span></h1>
-          </div>
-          <div class="col-auto">
+          <div>
             <template v-for="link in links">
-              <elm-arrow :class="{ 'active': link === currentPage }" />
+              <elm-arrow :class="{ 'active': link === currentPage }" class="me-2" />
               <a href="#" class="me-2" :class="{ 'active': link === currentPage }">{{ link.toUpperCase() }}</a>
             </template>
             <a href="#" class="me-2"><i class="bi bi-search"></i></a>
@@ -53,7 +51,7 @@ export default {
 @use '../assets/scss/partials/_variables.scss' as *;
 
 .header {
-  padding: 50px 80px;
+  margin: 50px 0;
   position: absolute;
   top: 0;
   left: 0;

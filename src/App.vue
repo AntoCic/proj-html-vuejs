@@ -15,5 +15,8 @@ export default {
 </script>
 
 <style lang="scss">
-
+@use './assets/scss/partials/_variables.scss' as *;
+#app{
+  background-color: $bg-light-gray;
+}
 </style>
