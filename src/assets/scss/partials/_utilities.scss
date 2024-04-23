@@ -4,13 +4,19 @@
     color: $orange;
 }
 
+.p-sct{
+    padding: 130px 0;
+}
+
 .sct-title {
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
     font-size: 48px;
 
-    &::after {
+
+
+    &:not(.no-dot)::after {
         content: ".";
         color: $orange;
     }
@@ -27,7 +33,7 @@
     display: block;
     width: 70px;
     height: 2px;
-    margin: 30px auto;
+    margin: 30px 0;
 }
 .sct-sub-line-center::after {
     content: '';
@@ -35,5 +41,5 @@
     display: block;
     width: 70px;
     height: 2px;
-    margin: 30px 0;
+    margin: 30px auto;
 }
