@@ -4,8 +4,8 @@
         <div class="ms_container-lg">
             <div class="ms_container-md">
                 <div class="col-6 libre-baskerville-bold">
-                    <h2 class="title">Our Team<span class="text-orange">.</span></h2>
-                    <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam optio velit
+                    <h2 class="sct-title">Our Team</h2>
+                    <p class="sct-sub-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam optio velit
                         neque assumenda fuga minus.</p>
                         <ElmBtn1 :content="'READ MORE'" class="me-3"/>
                         <ElmBtn1 :content="'PURCHASE'" class="btn-orange"/>
@@ -53,15 +53,13 @@ img {
 .ms_container-md {
     padding: 240px 0;
 
-    .title {
+    .sct-title {
         font-size: 96px;
         margin-bottom: 40px;
         line-height: 0.9em;
     }
 
-    .content {
-        font-size: 20px;
-        color: #a6a6a6;
+    .sct-sub-title {
         margin-bottom: 44px;
     }
 }

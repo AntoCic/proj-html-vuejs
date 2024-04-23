@@ -1,8 +1,39 @@
 @use './variables' as *;
 
-.text-orange{
+.text-orange {
     color: $orange;
 }
-.text-orange{
-    color: $orange;
+
+.sct-title {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+
+    &::after {
+        content: ".";
+        color: $orange;
+    }
+}
+
+.sct-sub-title {
+    font-size: 20px;
+    color: #a6a6a6;
+}
+
+.sct-sub-line::after {
+    content: '';
+    background-color: $orange;
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 30px auto;
+}
+.sct-sub-line-center::after {
+    content: '';
+    background-color: $orange;
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 30px 0;
 }

@@ -2,7 +2,7 @@
     <header class="header w-100">
       <div class="ms_container-lg">
         <div class="d-flex justify-content-between align-items-center">
-            <h1 class="mb-0 libre-baskerville-bold">Everland<span class="text-orange">.</span></h1>
+          <h1 class="sct-title mb-0">Everland</h1>
           <div>
             <template v-for="link in links">
               <elm-arrow :class="{ 'active': link === currentPage }" class="me-2" />
