@@ -3,6 +3,13 @@
         <SctHero />
         <SctSpecialties />
         <SctFounder />
+        <SctEvents />
+        <SctLeader />
+        <SctNews />
+        <SctTestimonials />
+        <SctVideos />
+        <SctContact />
+        <SctPartners />
 
 
     </main>
