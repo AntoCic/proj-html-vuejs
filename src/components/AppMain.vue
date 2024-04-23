@@ -1,11 +1,8 @@
 <template>
     <main>
-        <section class="hero">
-            <img src="../assets/img/rev-slider-main-home-img-03.jpg" alt="">
+        <SctHero />
 
-        </section>
-
-        <section class="specialities w-100 mt--1">
+        <!-- <section class="specialities w-100 mt--1">
             <div class="ms_container-lg bg-white">
                 <div class="col text-center">
                     <h2 class="mb-0">Our specialities<span class="text-orange">.</span></h2>
@@ -38,8 +35,8 @@
             </div>
 
 
-        </section>
-        <section class="social">
+        </section> -->
+        <!-- <section class="social">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-8">
@@ -51,29 +48,16 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
     </main>
 </template>
 
 <script>
-
+import SctHero from './SctHero.vue';
 export default {
-    data() {
-        return {
-        }
-    },
-    methods: {
-        imgSrc(nameFile) {
-            return '/src/assets/img/' + nameFile
-        }
-    },
-    computed: {
-    },
-    mounted() {
-    }
+    components: { SctHero }
 }
-
 </script>
 
 <style lang="scss" scoped>
