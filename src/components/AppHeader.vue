@@ -4,12 +4,12 @@
         <div class="d-flex justify-content-between align-items-center">
           <h1 class="sct-title mb-0">Everland</h1>
           <div>
-            <template v-for="link in links">
-              <elm-arrow :class="{ 'active': link === currentPage }" class="me-2" />
-              <a href="#" class="me-2" :class="{ 'active': link === currentPage }">{{ link.toUpperCase() }}</a>
+            <template v-for="link in links" :key="link">
+              <ElmArrowHeader :class="{ 'active': link === currentPage }" class="me-2" />
+              <a href="#" :class="{ 'active': link === currentPage }" @click="store.currentPage = link">{{ link.toUpperCase() }}</a>
             </template>
-            <a href="#" class="me-2"><i class="bi bi-search"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-list-ul"></i></a>
+            <a href="#"><i class="bi bi-search"></i></a>
+            <a href="#" class="me-0"><i class="bi bi-list-ul"></i></a>
           </div>
         </div>
       </div>
@@ -19,10 +19,10 @@
 <script>
 import { store } from '../store.js';
 
-import ElmArrow from './ElmArrow.vue'
+import ElmArrowHeader from './ElmArrowHeader.vue'
 
 export default {
-  components: { ElmArrow },
+  components: { ElmArrowHeader },
   data() {
     return {
       store,
@@ -53,9 +53,15 @@ export default {
 .header {
   margin: 40px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
+  h1{
+    font-size: 24px;
+  }
+  a{
+    margin-right: 40px;
+  }
 }
 
 .active {
