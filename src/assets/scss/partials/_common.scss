@@ -3,3 +3,11 @@
 body {
   font-family: $font-stack;
 }
+
+// <a href="#" class="read-more"></a>
+.read-more::after {
+  content: "READ MORE";
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
