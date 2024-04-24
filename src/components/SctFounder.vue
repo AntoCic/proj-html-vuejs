@@ -2,6 +2,11 @@
     <section class="founder  w-100 p-sct ">
         <div class="ms_container-md position-relative">
             <img src="/src/assets/img/h1-img-01.jpg">
+            <div class="arr-img">
+                <ElmArrow class="arr-left" color="#fff" />
+                <ElmArrow class="arr-right" color="#fff" />
+            </div>
+
             <div class="box">
                 <h2 class="sct-title no-dot">Jason Bickford</h2>
                 <p class="sct-sub-title sct-sub-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
@@ -10,9 +15,9 @@
                     commodi voluptatem omnis voluptate itaque veritatis temporibus quis modi velit!</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <ElmBtnsSocials :icoList="['linkedin.svg', 'facebook.svg', 'twitter.svg']" class="orange" />
-                    <svg class="signature" version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt" height="29.000000pt"
-                        viewBox="0 0 86.000000 29.000000" preserveAspectRatio="xMidYMid meet">
-                       
+                    <svg class="signature" version="1.0" xmlns="http://www.w3.org/2000/svg" width="200.000000pt"
+                        height="29.000000pt" viewBox="0 0 86.000000 29.000000" preserveAspectRatio="xMidYMid meet">
+
                         <g transform="translate(0.000000,29.000000) scale(0.100000,-0.100000)" fill="#FF4612"
                             stroke="none">
                             <path d="M113 265 c-47 -20 -41 -26 7 -8 50 20 70 7 70 -48 0 -34 -4 -40 -35
@@ -57,21 +62,25 @@
 
 <script>
 import ElmBtnsSocials from './ElmBtnsSocials.vue';
+import ElmArrow from './ElmArrow.vue';
 export default {
-    components: { ElmBtnsSocials },
+    components: { ElmBtnsSocials, ElmArrow },
+
 }
 
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/_variables.scss' as *;
+
 img {
     padding: 10px;
-    width: 60%;
+    width: 55%;
 }
 
 .box {
     background-color: white;
-    width: calc(60% - 10px);
+    width: calc(55% - 10px);
     position: absolute;
     right: 0;
     top: 0;
@@ -83,7 +92,15 @@ img {
     padding: 0 50px;
 }
 
-.signature{
+.signature {
     transform: scale(1.5);
+}
+
+.arr-img {
+    background-color: $orange;
+    position: absolute;
+    padding: 20px;
+    bottom: 10px;
+    left: 22px;
 }
 </style>
