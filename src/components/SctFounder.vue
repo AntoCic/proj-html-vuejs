@@ -65,9 +65,7 @@ import ElmBtnsSocials from './ElmBtnsSocials.vue';
 import ElmArrow from './ElmArrow.vue';
 export default {
     components: { ElmBtnsSocials, ElmArrow },
-
 }
-
 </script>
 
 <style lang="scss" scoped>

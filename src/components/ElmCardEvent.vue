@@ -18,11 +18,6 @@
 <script>
 export default {
   props: ['eventObj'],
-  methods: {
-    imgSocialPath(fileName) {
-      return `/src/assets/img/social/${fileName}`
-    }
-  },
 }
 </script>
 

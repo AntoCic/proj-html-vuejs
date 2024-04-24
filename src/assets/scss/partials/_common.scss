@@ -11,3 +11,9 @@ body {
   font-weight: bolder;
   font-size: 20px;
 }
+
+.ms_progress-bar {
+  display: block;
+  background-color: $orange;
+  height: 2px;
+}

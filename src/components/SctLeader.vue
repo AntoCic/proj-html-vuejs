@@ -7,25 +7,15 @@
                         <h2 class="sct-title">Creative Leader</h2>
                         <div class="sct-sub-title sct-sub-line"></div>
                         <p class="sct-sub-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                            ipsam modi
-                            dolorem at magni tempora similique repudiandae sed harum! Autem iusto sunt adipisci,
-                            repellendus
-                            voluptatibus perferendis nisi? Repudiandae voluptates ut consequuntur aliquam et repellendus
-                            veniam
-                            delectus, pariatur sapiente! Saepe hic illo libero sequi explicabo eos possimus totam
-                            aspernatur quo
-                            sapiente.</p>
-                            <p>READ MORE</p>
+                            ipsam modi dolorem at magni tempora similique repudiandae sed harum! Autem iusto sunt
+                            adipisci, repellendus voluptatibus perferendis nisi? Repudiandae voluptates </p>
+                        <a href="#" class="read-more"></a>
                     </div>
                     <div class="col">
-                        <div class="d-flex justify-content-between ">
-                            <h4>Mentorship</h4> 
-                            <span>78%</span>
-                        </div>
-                        <div class="d-flex justify-content-between ">
-                            <h4>Mentorship</h4> 
-                            <span>78%</span>
-                        </div>
+                        <ElmCardLeader titolo="Mentorship" :progress="78" />
+                        <ElmCardLeader titolo="Education" :progress="95" />
+                        <ElmCardLeader titolo="Learning" :progress="65" />
+                        <ElmCardLeader titolo="Motivation" :progress="83" />
                     </div>
                 </div>
             </div>
@@ -36,4 +26,15 @@
 
 </template>
 
-<style lang="scss" scoped></style>
+<script>
+import ElmCardLeader from './ElmCardLeader.vue'
+export default {
+    components: { ElmCardLeader },
+}
+</script>
+
+<style lang="scss" scoped>
+.card-leader {
+    margin-bottom: 30px;
+}
+</style>
