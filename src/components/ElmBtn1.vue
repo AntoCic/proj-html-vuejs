@@ -6,12 +6,7 @@
 </template>
 <script>
 export default {
-  props: ['content'],
-  methods: {
-
-  },
-
-
+  props: ['content']
 }
 </script>
 

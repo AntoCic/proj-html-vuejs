@@ -1,7 +1,9 @@
 <template>
     <section class="hero w-100 position-relative">
         <img :src="imgSrc('rev-slider-main-home-img-03.jpg')">
-        <div class="ms_container-lg">
+        <div class="ms_container-lg position-relative">
+            <ElmArrow class="arr-left position-absolute top-50 start-0 translate-middle-y"/>
+            <ElmArrow class="arr-right position-absolute top-50 end-0 translate-middle-y"/>
             <div class="ms_container-md">
                 <div class="col-6 libre-baskerville-bold">
                     <h2 class="sct-title">Our Team</h2>
@@ -10,7 +12,6 @@
                         <ElmBtn1 :content="'READ MORE'" class="me-3"/>
                         <ElmBtn1 :content="'PURCHASE'" class="btn-orange"/>
                 </div>
-
             </div>
         </div>
     </section>
@@ -19,8 +20,9 @@
 
 <script>
 import ElmBtn1 from './ElmBtn1.vue';
+import ElmArrow from './ElmArrow.vue';
 export default {
-    components: { ElmBtn1 },
+    components: { ElmBtn1,ElmArrow },
     methods: {
         imgSrc(nameFile) {
             return '/src/assets/img/' + nameFile
