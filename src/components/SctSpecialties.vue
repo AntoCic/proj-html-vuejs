@@ -4,7 +4,8 @@
             <div class="ms_container-md text-center">
 
                 <h2 class="sct-title">Our specialities</h2>
-                <p class="sct-sub-title sct-sub-line-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+                <p class="sct-sub-title sct-sub-line-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Hic,
                     perferendis.</p>
 
                 <div class="d-flex justify-content-around container-boxs">
@@ -41,6 +42,15 @@
 .specialities {
     position: relative;
     z-index: 1;
+
+    h3 {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
 }
 
 .mt--1 {
@@ -48,11 +58,11 @@
 }
 
 
-.container-boxs{
+.container-boxs {
     padding-top: 40px;
 }
 
-.box{
+.box {
     max-width: 200px;
 }
 </style>
